@@ -1,3 +1,4 @@
 flask
 spacy
 scrapy
+gunicorn==20.1.0
