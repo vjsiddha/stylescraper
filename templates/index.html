@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleScout</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #B3E5FC, #E1BEE7);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav ul li {
+            display: inline;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .title {
+            font-size: 4em;
+            margin: 0;
+        }
+        .caption {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="title">StyleScout</h1>
+        <p class="caption">AI-powered search engine to help you find your dream outfit</p>
+        <form action="/search" method="post">
+            <input type="text" name="query" placeholder="Search things like 'muscle fit cotton shirt'">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
