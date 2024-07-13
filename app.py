@@ -3,6 +3,10 @@ import json
 import spacy
 import os
 
+# Ensure Spacy model is downloaded
+import spacy.cli
+spacy.cli.download("en_core_web_sm")
+
 app = Flask(__name__)
 nlp = spacy.load("en_core_web_sm")
 
