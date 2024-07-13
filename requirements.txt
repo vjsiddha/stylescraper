@@ -1,4 +1,4 @@
 flask
-spacy
+spacy==3.7.5
 scrapy
 gunicorn==20.1.0
